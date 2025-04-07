@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import DarkModeToggle from "./DarkModeToggle"; // Asegúrate de que la ruta sea correcta
+import React from "react";
 
 function Navbar() {
   return (
@@ -10,6 +12,7 @@ function Navbar() {
         <li><Link to="/projects">Proyectos</Link></li>
         <li><Link to="/contact">Contacto</Link></li>
       </ul>
+      <DarkModeToggle />
     </nav>
   );
 }
