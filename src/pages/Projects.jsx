@@ -13,7 +13,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black">
       {projects.map((proj, i) => (
         <ProjectCard key={i} {...proj} />
       ))}
