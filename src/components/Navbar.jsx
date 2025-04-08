@@ -39,9 +39,7 @@ function Navbar() {
       </ul>
 
       {/* Burger icon */}
-      <div className="md:hidden flex items-center gap-4">
-        <DarkModeToggle />
-        <LanguageSwitcher />
+      <div className="md:hidden flex items-center gap-4 z-10">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -49,17 +47,18 @@ function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="absolute top-0 left-0 w-full bg-gray-800 text-white p-4 md:hidden">
-          {links.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              onClick={closeMenu}
-              className="block text-white hover:text-blue-400 transition"
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className="fixed inset-0 top-0 left-0 w-full h-full min-h-screen divide-y opacity-90 bg-gray-800 text-white p-4 md:hidden">
+          <ul className="space-y-4 flex flex-col items-center justify-center h-full">
+            {links.map((link) => (
+              <li key={link.to} className="w-full flex flex-col py-3 items-center tracking-widest border-b-2 border-gray-700">
+                <Link to={link.to} onClick={closeMenu} className="hover:text-blue-400 transition">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li><DarkModeToggle /></li>
+            <li><LanguageSwitcher /></li>
+          </ul>
         </div>
       )}
     </nav>
