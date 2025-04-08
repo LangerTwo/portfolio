@@ -1,7 +1,8 @@
 {
     "greeting": "Welcome to my portfolio",
+    "developer": "Developer",
     "home": "Home",
-    "about": "About me",
+    "about": "About",
     "projects": "Projects",
     "contact": "Contact"
 }
