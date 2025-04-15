@@ -1,37 +1,36 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useTranslation } from 'react-i18next'
-import DarkModeToggle from "./DarkModeToggle"; // Asegúrate de que la ruta sea correcta
+import DarkModeToggle from "./DarkModeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 function Navbar() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
   const links = [
-    { to: "/", label: t("home") },
-    { to: "/about", label: t("about") },
-    { to: "/projects", label: t("projects_title") },
-    { to: "/contact", label: t("contact") },
+    { to: "#home", label: t("home") },
+    { to: "#about", label: t("about") },
+    { to: "#projects", label: t("projects_title") },
+    { to: "#contact", label: t("contact") },
   ];
-  
+
   return (
-    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between">
+    <nav className="fixed bg-gray-800 text-white px-6 py-4 flex justify-between">
       <h1 className="text-xl font-bold">
-        <Link to="/" onClick={closeMenu}>Mi Portafolio</Link>
+        <a href="#home" onClick={closeMenu}>Mi Portafolio</a>
       </h1>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex space-x-6 items-center">
         {links.map((link) => (
-          <li key={link.to}>
-            <Link to={link.to} onClick={closeMenu} className="hover:text-blue-400 transition">
+          <li key={link.to} smooth={true} duration={500} className="tracking-widest">
+            <a href={link.to} onClick={closeMenu} className="hover:text-blue-400 transition">
               {link.label}
-            </Link>
+            </a>
           </li>
         ))}
         <li><DarkModeToggle /></li>
@@ -51,9 +50,9 @@ function Navbar() {
           <ul className="space-y-4 flex flex-col items-center justify-center h-full">
             {links.map((link) => (
               <li key={link.to} className="w-full flex flex-col py-3 items-center tracking-widest border-b-2 border-gray-700">
-                <Link to={link.to} onClick={closeMenu} className="hover:text-blue-400 transition">
+                <a href={link.to} onClick={closeMenu} className="hover:text-blue-400 transition">
                   {link.label}
-                </Link>
+                </a>
               </li>
             ))}
             <li><DarkModeToggle /></li>
@@ -66,3 +65,4 @@ function Navbar() {
 }
 
 export default Navbar;
+// This code is a React component for a responsive navigation bar.
