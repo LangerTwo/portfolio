@@ -3,6 +3,12 @@
     "developer": "Developer",
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
+    "about_me": "I am a frontend developer passionate about creating attractive and functional interfaces.",
+    "projects": {
+        "netflix": {
+            "description": "Application that shows movies using the TMDB API."
+        }
+    },
+    "see_projects": "See Projects",
     "contact": "Contact"
 }

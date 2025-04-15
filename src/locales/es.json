@@ -3,6 +3,12 @@
     "developer": "Desarrollador",
     "home": "Inicio",
     "about": "Sobre mí",
-    "projects": "Proyectos",
+    "about_me": "Soy un desarrollador frontend apasionado por crear interfaces atractivas y funcionales.",
+    "projects": {
+        "netflix": {
+            "description": "Aplicación que muestra películas usando la API de TMDB."
+        }
+    },
+    "see_projects": "Ver Proyectos",
     "contact": "Contacto"
 }
