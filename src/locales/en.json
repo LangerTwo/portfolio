@@ -8,6 +8,12 @@
     "projects": {
         "netflix": {
             "description": "Application that shows movies using the TMDB API."
+        },
+        "poke": {
+            "description": "Web app to explore and search Pokémon using PokéAPI."
+        },
+        "portfolio": {
+            "description": "Personal portfolio created with React and Tailwind CSS."
         }
     },
     "see_projects": "See Projects",

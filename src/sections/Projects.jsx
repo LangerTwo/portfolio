@@ -9,6 +9,12 @@ const projects = [
     // img: img1,
     link: "https://github.com/usuario/netflix-clone",
   },
+  {
+    title: "Poke Web",
+    description: "projects.poke.description",
+    link: "https://github.com/LangerTwo/poke-web",
+    demo: "https://web-dex.netlify.app/",
+  },
   // agrega más
 ];
 
