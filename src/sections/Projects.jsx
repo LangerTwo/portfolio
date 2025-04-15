@@ -1,6 +1,8 @@
 import ProjectCard from "../components/ProjectCard";
-// import img1 from "../assets/proyecto1.png";
 import { useTranslation } from 'react-i18next'
+
+// Importa las imágenes de los proyectos aquí
+import poke from "../assets/poke/poke.webp";
 
 const projects = [
   {
@@ -14,6 +16,7 @@ const projects = [
     description: "projects.poke.description",
     link: "https://github.com/LangerTwo/poke-web",
     demo: "https://web-dex.netlify.app/",
+    img: poke,
   },
   // agrega más
 ];
