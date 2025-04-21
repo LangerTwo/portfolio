@@ -5,12 +5,15 @@
     "about": "Sobre mí",
     "about_me": "Soy un desarrollador frontend apasionado por crear interfaces atractivas y funcionales.",
     "projects_title": "Proyectos",
+    "more_info": "Más información",
+    "close": "Cerrar",
     "projects": {
         "netflix": {
             "description": "Aplicación que muestra películas usando la API de TMDB."
         },
         "poke": {
-            "description": "App web para explorar y buscar Pokémon usando PokéAPI."
+            "description": "App web para explorar y buscar Pokémon usando PokéAPI.",
+            "moreInfo": "Esta aplicación muestra una lista de Pokémon obtenida desde la PokéAPI. Puedes buscar, filtrar y ver estadísticas detalladas de cada uno. Fue construida con React, Tailwind y React Router."
         },
         "portfolio": {
             "description": "Portafolio personal creado con React y Tailwind CSS."

@@ -14,6 +14,7 @@ const projects = [
   {
     title: "Poke Web",
     description: "projects.poke.description",
+    moreInfo: "projects.poke.moreInfo",
     link: "https://github.com/LangerTwo/poke-web",
     demo: "https://web-dex.netlify.app/",
     img: poke,
