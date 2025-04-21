@@ -100,3 +100,32 @@
   width: 1.5em;
   height: 0.8em;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 9999px;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  overflow: hidden !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: 1rem !important;
+  left: auto !important;
+}
+.swiper-button-prev {
+  left: 1rem !important;
+  right: auto !important;
+}

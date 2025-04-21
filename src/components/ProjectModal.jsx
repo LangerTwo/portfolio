@@ -10,37 +10,50 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div 
-          className="fixed inset-0 bg-[#000000db] bg-opacity-60 z-50 flex justify-center items-center p-4"
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+        className="fixed inset-0 bg-[#000000db] bg-opacity-60 z-50 flex justify-center items-center p-4"
+        initial={{ opacity: 0 }} 
+        animate={{ opacity: 1 }} 
+        exit={{ opacity: 0 }}
+      >
+        <motion.div 
+          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-hidden relative flex flex-col"
+          initial={{ scale: 0.8 }} 
+          animate={{ scale: 1 }} 
+          exit={{ scale: 0.8 }}
         >
-          <motion.div 
-            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-[80%] relative max-w-2xl"
-            initial={{ scale: 0.8 }} 
-            animate={{ scale: 1 }} 
-            exit={{ scale: 0.8 }}
-            transition={{ duration: 0.3 }}
+          <button 
+            onClick={onClose} 
+            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-gray-300 z-10 p-2 rounded-full"
           >
-            <button 
-              onClick={onClose} 
-              className="absolute top-0.5 right-0.5 text-white dark:text-white hover:scale-105 bg-gray-300 z-10 p-2 rounded-full"
+            <X />
+          </button>
+      
+          <div className="flex-1 overflow-y-auto">
+            <Swiper
+              modules={[Navigation]}
+              loop={true}
+              navigation
+              className="rounded-b-lg"
             >
-              <X />
-            </button>
-            <Swiper modules={[Navigation]} loop={true} navigation className="rounded-b-lg">
               {slides.map((slide, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="p-4 text-center">
-                    <img src={slide.image} alt={`Slide ${idx}`} className="w-full object-cover rounded mb-4" />
-                    <p className="text-gray-800 dark:text-white">{slide.text}</p>
+                    <img 
+                      src={slide.image} 
+                      alt={`Slide ${idx}`} 
+                      className="w-full z-0 max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
+                    />
+                    <p className="text-gray-800 dark:text-white text-sm md:text-base">
+                      {slide.text}
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
-          </motion.div>
+          </div>
         </motion.div>
+      </motion.div>
+      
       )}
     </AnimatePresence>
   );
