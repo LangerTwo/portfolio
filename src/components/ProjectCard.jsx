@@ -33,22 +33,6 @@ function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) 
 
       {/* Modal */}
       <ProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} slides={slides} />
-      {/* {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000db] bg-opacity-60 p-4">
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-xl max-w-md w-full shadow-lg">
-            <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">{title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 whitespace-pre-line">{t(moreInfo)}</p>
-            <div className="mt-6 text-right">
-              <button
-                onClick={() => setShowModal(false)}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-              >
-                {t('close')}
-              </button>
-            </div>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 }
