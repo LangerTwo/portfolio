@@ -18,6 +18,11 @@ const projects = [
     link: "https://github.com/LangerTwo/poke-web",
     demo: "https://web-dex.netlify.app/",
     img: poke,
+    slides: [
+      { image: poke, text: "Landing de la aplicación con diseño responsivo." },
+      { image: poke, text: "Listado de Pokémon obtenidos desde la API." },
+      { image: poke, text: "Detalle de cada Pokémon con información extendida." }
+    ]
   },
   // agrega más
 ];

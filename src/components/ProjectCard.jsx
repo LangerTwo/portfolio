@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next'
+import ProjectModal from './ProjectModal';
 
-function ProjectCard({ title, description, img, link, demo, moreInfo }) {
+function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) {
   const { t } = useTranslation()
-  const [showModal, setShowModal] = useState(false)
+  // const [showModal, setShowModal] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="bg-white rounded-xl shadow-md dark:shadow-white dark:shadow-sm overflow-hidden p-4">
@@ -21,7 +23,7 @@ function ProjectCard({ title, description, img, link, demo, moreInfo }) {
         )}
         {moreInfo && (
           <button
-            onClick={() => setShowModal(true)}
+            onClick={() => setModalOpen(true)}
             className="text-sm text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
           >
             {t('more_info')}
@@ -30,7 +32,8 @@ function ProjectCard({ title, description, img, link, demo, moreInfo }) {
       </div>
 
       {/* Modal */}
-      {showModal && (
+      <ProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} slides={slides} />
+      {/* {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#000000db] bg-opacity-60 p-4">
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl max-w-md w-full shadow-lg">
             <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">{title}</h3>
@@ -45,7 +48,7 @@ function ProjectCard({ title, description, img, link, demo, moreInfo }) {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
