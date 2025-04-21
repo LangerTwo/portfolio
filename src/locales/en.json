@@ -13,7 +13,16 @@
         },
         "poke": {
             "description": "Web app to explore and search Pokémon using PokéAPI.",
-            "moreInfo": "This application displays a list of Pokémon obtained from the PokéAPI. You can search, filter, and view detailed statistics for each one. It was built with React, Tailwind, and React Router."
+            "moreInfo": "This application displays a list of Pokémon obtained from the PokéAPI. You can search, filter, and view detailed statistics for each one. It was built with React, Tailwind, and React Router.",
+            "slides": {
+                "0": "This web application showcases a comprehensive view of all the regions in the Pokémon universe through a clear, visual, and accessible interface. Each card represents a distinct region, featuring its iconic image and a brief description that introduces its main characteristics. By clicking on any card, an interactive modal opens, providing more information about that region, including a carousel of images and detailed descriptions, all synchronized for a smooth and dynamic experience. The design is fully responsive, tailored to work perfectly on both computers and mobile devices. Ideal for fans who want to explore, learn, or simply relive the nostalgia of each generation.",
+                "1": "List of Pokémon obtained from the API.",
+                "2": "Detail of each Pokémon with extended information.",
+                "3": "Detail of each Pokémon with extended information.",
+                "4": "Detail of each Pokémon with extended information.",
+                "5": "Detail of each Pokémon with extended information.",
+                "6": "Detail of each Pokémon with extended information."
+            }
         },
         "portfolio": {
             "description": "Personal portfolio created with React and Tailwind CSS."

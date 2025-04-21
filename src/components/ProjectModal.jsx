@@ -23,7 +23,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
         >
           <button 
             onClick={onClose} 
-            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-[#000000db] z-10 p-2 rounded-full"
+            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-[#000000db] hover:bg-black z-10 p-2 rounded-full"
           >
             <X />
           </button>
