@@ -23,7 +23,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
         >
           <button 
             onClick={onClose} 
-            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-gray-300 z-10 p-2 rounded-full"
+            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-[#000000db] z-10 p-2 rounded-full"
           >
             <X />
           </button>
@@ -41,7 +41,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
                     <img 
                       src={slide.image} 
                       alt={`Slide ${idx}`} 
-                      className="w-full z-0 max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
+                      className="w-full max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
                     />
                     <p className="text-gray-800 dark:text-white text-sm md:text-base">
                       {slide.text}
