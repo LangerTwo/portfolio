@@ -3,26 +3,79 @@
     "developer": "Desarrollador",
     "home": "Inicio",
     "about": "Sobre mí",
-    "about_me": "Soy un desarrollador frontend apasionado por crear interfaces atractivas y funcionales.",
+    "about_me": [
+        "¡Hola! Soy un desarrollador frontend apasionado por construir experiencias web interactivas, dinámicas y con un diseño moderno. Me gusta combinar lógica con creatividad para transformar ideas en interfaces funcionales.",
+        "Trabajo principalmente con tecnologías como React, Tailwind CSS y herramientas modernas del ecosistema frontend como framer-motion, React Router y Swiper. También tengo experiencia consumiendo APIs externas y organizando proyectos de forma escalable y reutilizable.",
+        "Disfruto crear componentes accesibles, responsive y optimizados tanto para escritorio como para móvil. Me enfoco en que cada vista tenga una navegación fluida y una estructura clara, mejorando la experiencia del usuario.",
+        "Siempre estoy en constante aprendizaje, buscando mejorar mi código, adaptarme a nuevas herramientas y compartir lo que voy construyendo. Me motiva mucho trabajar en proyectos que mezclan tecnología, diseño y buena organización."
+    ],
     "projects_title": "Proyectos",
     "more_info": "Más información",
     "close": "Cerrar",
     "projects": {
-        "netflix": {
-            "description": "Aplicación que muestra películas usando la API de TMDB."
-        },
         "poke": {
             "description": "App web para explorar y buscar Pokémon usando PokéAPI.",
             "moreInfo": "Esta aplicación muestra una lista de Pokémon obtenida desde la PokéAPI. Puedes buscar, filtrar y ver estadísticas detalladas de cada uno. Fue construida con React, Tailwind y React Router.",
             "slides": {
-                "0": "Esta aplicación web muestra una vista completa de todas las regiones del universo Pokémon a través de una interfaz clara, visual y accesible. Cada tarjeta representa una región distinta, con su imagen icónica y una descripción breve que introduce sus características principales. Al hacer clic en cualquier tarjeta, se abre un modal interactivo que ofrece más información sobre esa región, incluyendo un carrusel de imágenes y descripciones detalladas, todo sincronizado para una experiencia fluida y dinámica. El diseño es completamente responsivo, pensado para funcionar perfectamente en computadoras y dispositivos móviles. Ideal para fans que quieren explorar, aprender o simplemente revivir la nostalgia de cada generación.",
-                "1": "Listado de Pokémon obtenidos desde la API.",
-                "2": "Detalle de cada Pokémon con información extendida.",
-                "3": "Detalle de cada Pokémon con información extendida.",
-                "4": "Detalle de cada Pokémon con información extendida.",
-                "5": "Detalle de cada Pokémon con información extendida.",
-                "6": "Detalle de cada Pokémon con información extendida."
+                "0": [
+                    "Esta aplicación web muestra una vista completa de todas las regiones del universo Pokémon a través de una interfaz clara, visual y accesible.",
+                    "Cada tarjeta representa una región distinta, con su imagen icónica y una descripción breve que introduce sus características principales.",
+                    "Al hacer clic en cualquier tarjeta, se abre un modal que ofrece más información sobre esa región.",
+                    "El diseño es completamente responsivo, pensado para funcionar perfectamente en computadoras y dispositivos móviles.",
+                    "Ideal para fans que quieren explorar, aprender o simplemente revivir la nostalgia de cada generación."
+                ],
+                "1": [
+                    "Este componente permite al usuario buscar cualquier Pokémon por su nombre desde cualquier página del sitio.",
+                    "Al realizar la búsqueda, se despliega un modal que muestra información relevante del Pokémon encontrado, incluyendo su nombre, tipo y número de Pokédex (ID).",
+                    "El modal está dividido en tres pestañas para organizar mejor la información:",
+                    "Información: Se muestra la imagen del Pokémon junto a su versión shiny, una breve descripción, su habilidad principal y habilidad oculta. Estas habilidades están presentadas dentro de un sistema de acordeón.",
+                    "Estadísticas: Las estadísticas base del Pokémon se presentan de forma visual, diferenciadas por colores para facilitar su lectura. Cada estadística tiene su propio acordeón para detalles adicionales.",
+                    "Movimientos: Contiene una lista de movimientos organizados en acordeones. Incluye un botón para cargar más movimientos.",
+                    "Este buscador mejora la experiencia del usuario al ofrecer acceso rápido y detallado a la información de cualquier Pokémon sin necesidad de cambiar de página."
+                ],
+                "2": [
+                    "El modal despliega información adicional sobre cada región, incluyendo detalles como el profesor encargado, los Pokémon iniciales, los villanos principales y los Pokémon legendarios asociados.",
+                    "También incorpora un botón para cerrarlo y un botón de 'Ver más', que permite acceder a una página con información extendida.",
+                    "Esta funcionalidad mejora la experiencia del usuario al presentar contenido de manera organizada y accesible sin salir de la página principal."
+                ],
+                "3": [
+                    "Esta página se activa al hacer clic en 'Ver más' dentro del modal de una región.",
+                    "Su objetivo es proporcionar un acceso más profundo a los elementos clave de cada región a través de un diseño basado en tarjetas.",
+                    "Lista Pokémon: Muestra la cantidad de Pokémon de la región. Los datos se obtienen dinámicamente desde la API. Al hacer clic, se accede a la lista completa.",
+                    "Líderes de Gimnasio: Ofrece acceso a los líderes, su especialidad y su gimnasio. Se navega usando React Router (useNavigate).",
+                    "La vista usa un componente reutilizable (Card) para mantener consistencia visual. Esta sección mejora la exploración de contenido en el sitio."
+                ],
+                "4": [
+                    "Se activa al seleccionar 'Ver todos' desde la vista de detalle de una región.",
+                    "Su propósito es mostrar todos los Pokémon de la región de forma visual, ordenada y dinámica.",
+                    "Cada Pokémon se representa en una tarjeta con: ID, imagen, nombre, tipos, habilidad principal y botón para ver más.",
+                    "Las tarjetas cambian de color automáticamente según el tipo del Pokémon.",
+                    "Se incluye un filtro por tipo conectado a la API, y la lista está ordenada por número de Pokédex.",
+                    "También se manejan estados de carga y errores, y se puede acceder a una vista con detalles ampliados.",
+                    "Tecnologías: React (con hooks), React Router, Fetch API, TailwindCSS y componentes modulares."
+                ],
+                "5": [
+                    "Esta página aparece al hacer clic en 'Ver más' desde cualquier tarjeta de Pokémon.",
+                    "Reutiliza el diseño visual del modal, pero en página completa para una experiencia más rica.",
+                    "Pestaña de Información: imagen oficial, versión shiny, descripción, habilidades (con acordeón), y evolución visual.",
+                    "Pestaña de Estadísticas: muestra las estadísticas base en bloques de colores diferenciados.",
+                    "Pestaña de Movimientos: lista de movimientos con acordeón y botón para cargar más.",
+                    "Pestaña adicional de Mega Evoluciones: aparece si el Pokémon tiene formas mega. Cada forma incluye diseño, habilidades y estadísticas.",
+                    "Hooks personalizados como usePokemonDetails y usePokemonAbilities manejan lógica de carga y errores.",
+                    "La página es completamente responsiva y tiene navegación integrada para regresar a la lista anterior."
+                ],
+                "6": [
+                    "Desde la lista de líderes de la región, el usuario puede acceder a una página dedicada a ellos.",
+                    "Cada líder se presenta en una tarjeta informativa con imagen, nombre, ciudad, tipo de gimnasio y medalla.",
+                    "También se muestra el equipo Pokémon con imagen, nombre y nivel.",
+                    "Recompensas al vencerlos: MT y cantidad de pokedólares.",
+                    "Los datos se cargan dinámicamente usando useGymLeaders y se filtran según la región.",
+                    "Diseño en tarjetas responsivas con layout adaptable y jerarquía visual clara.",
+                    "Se usan iconos para mejorar la visualización, y hay control de errores con imágenes de fallback.",
+                    "Cada tarjeta hereda estilos según el tipo del líder (fuego, agua, etc.), aplicados en cabecera y decoraciones."
+                ]
             }
+
         },
         "portfolio": {
             "description": "Portafolio personal creado con React y Tailwind CSS."

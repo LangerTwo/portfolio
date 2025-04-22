@@ -23,7 +23,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
         >
           <button 
             onClick={onClose} 
-            className="absolute top-2 right-2 text-white dark:text-white hover:scale-105 bg-[#000000db] hover:bg-black z-10 p-2 rounded-full"
+            className="absolute top-2 right-2 text-white dark:text-black hover:text-red-400 hover:scale-105 bg-[#000000db] dark:bg-[#ffffffdb] hover:bg-black dark:hover:bg-white z-10 p-2 rounded-full"
           >
             <X />
           </button>
@@ -43,9 +43,18 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
                       alt={`Slide ${idx}`} 
                       className="w-full max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
                     />
-                    <p className="text-gray-800 dark:text-white text-sm md:text-base">
+                    {/* <p className="text-gray-800 dark:text-white text-sm md:text-base">
                       {slide.text}
-                    </p>
+                    </p> */}
+                    {Array.isArray(slide.text) ? (
+                      slide.text.map((paragraph, idx) => (
+                        <p key={idx} className="mb-2 text-gray-800 dark:text-white text-sm md:text-base">
+                          {paragraph}
+                        </p>
+                      ))
+                    ) : (
+                      <p className="text-gray-800 dark:text-white text-sm md:text-base">{slide.text}</p>
+                    )}
                   </div>
                 </SwiperSlide>
               ))}

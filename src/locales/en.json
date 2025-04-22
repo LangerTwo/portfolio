@@ -3,25 +3,77 @@
     "developer": "Developer",
     "home": "Home",
     "about": "About",
-    "about_me": "I am a frontend developer passionate about creating attractive and functional interfaces.",
+    "about_me": [
+        "Hi! I'm a frontend developer passionate about building interactive, dynamic, and modern web experiences. I enjoy blending logic with creativity to turn ideas into functional interfaces.",
+        "I primarily work with technologies like React, Tailwind CSS, and modern frontend tools such as framer-motion, React Router, and Swiper. I also have experience consuming external APIs and structuring projects to be scalable and reusable.",
+        "I focus on crafting responsive, accessible components optimized for both desktop and mobile. I care about clear navigation and clean layouts to improve the user experience.",
+        "I'm constantly learning, always trying to improve my code, explore new tools, and share what I build. I'm driven by projects that combine technology, design, and solid organization."
+    ],
     "projects_title": "Projects",
     "more_info": "More Info",
     "close": "Close",
     "projects": {
-        "netflix": {
-            "description": "Application that shows movies using the TMDB API."
-        },
         "poke": {
             "description": "Web app to explore and search Pokémon using PokéAPI.",
             "moreInfo": "This application displays a list of Pokémon obtained from the PokéAPI. You can search, filter, and view detailed statistics for each one. It was built with React, Tailwind, and React Router.",
             "slides": {
-                "0": "This web application showcases a comprehensive view of all the regions in the Pokémon universe through a clear, visual, and accessible interface. Each card represents a distinct region, featuring its iconic image and a brief description that introduces its main characteristics. By clicking on any card, an interactive modal opens, providing more information about that region, including a carousel of images and detailed descriptions, all synchronized for a smooth and dynamic experience. The design is fully responsive, tailored to work perfectly on both computers and mobile devices. Ideal for fans who want to explore, learn, or simply relive the nostalgia of each generation.",
-                "1": "List of Pokémon obtained from the API.",
-                "2": "Detail of each Pokémon with extended information.",
-                "3": "Detail of each Pokémon with extended information.",
-                "4": "Detail of each Pokémon with extended information.",
-                "5": "Detail of each Pokémon with extended information.",
-                "6": "Detail of each Pokémon with extended information."
+                "0": [
+                    "This web application displays a complete view of all Pokémon regions through a clear, visual, and accessible interface.",
+                    "Each card represents a different region, with its iconic image and a short description introducing its main features.",
+                    "Clicking on any card opens a modal with more information about that region.",
+                    "The design is fully responsive, ensuring perfect functionality on desktops and mobile devices.",
+                    "Ideal for fans who want to explore, learn, or simply relive the nostalgia of each generation."
+                ],
+                "1": [
+                    "This component allows users to search for any Pokémon by name from anywhere on the site.",
+                    "When a search is made, a modal appears showing relevant information about the Pokémon, including its name, type, and Pokédex number (ID).",
+                    "The modal is divided into three tabs to better organize the information:",
+                    "Info: Shows the Pokémon’s image along with its shiny version, a brief description, its main and hidden abilities, all within an accordion system.",
+                    "Stats: Base stats are displayed visually with color-coded bars. Each stat has its own accordion for more in-depth details.",
+                    "Moves: A list of the Pokémon’s known moves is shown using accordions, along with a button to load more.",
+                    "This search feature improves user experience by providing fast and detailed access to Pokémon information without switching pages."
+                ],
+                "2": [
+                    "The modal provides additional information about each region, including the professor, starter Pokémon, main villains, and legendary Pokémon.",
+                    "It also features a close button and a 'See More' button that takes users to an extended view of the region.",
+                    "This improves the user experience by presenting organized and accessible content without leaving the main page."
+                ],
+                "3": [
+                    "This page is triggered when clicking 'See More' inside a region modal.",
+                    "Its goal is to provide deeper access to key elements of each region using a card-based layout.",
+                    "Pokémon List: Displays the number of Pokémon in the selected region, fetched dynamically from the API. A button leads to the full list.",
+                    "Gym Leaders: Offers access to gym leader info including their specialty and gym. Navigation is handled using React Router (useNavigate).",
+                    "A reusable Card component is used for consistency. This section enhances content exploration across the site."
+                ],
+                "4": [
+                    "This section appears when 'See All' is clicked from the detailed region view.",
+                    "It displays all Pokémon from the selected region in a visual, organized, and dynamic way.",
+                    "Each Pokémon is shown on a card that includes: Pokédex ID, official image, name, types (with color tags), main ability, and a 'More Info' button.",
+                    "Cards change color based on the Pokémon’s primary type for quick visual reference.",
+                    "A type filter at the top connects to the API to show matching Pokémon, and the list is ordered by ID.",
+                    "Loading states and error handling are included to enhance the user experience.",
+                    "Technologies: React with hooks, React Router, Fetch API, TailwindCSS, and modular component structure."
+                ],
+                "5": [
+                    "This page is shown when clicking 'See More' on any Pokémon card.",
+                    "It reuses the modal's visual design but on a full page for a richer experience.",
+                    "Info Tab: Displays official and shiny images, a Pokédex description, evolution chain, and main/hidden abilities via accordion.",
+                    "Stats Tab: Shows base stats in color-coded visual blocks.",
+                    "Moves Tab: Lists known moves using accordions and a 'load more' button.",
+                    "Mega Evolutions Tab: Appears if the Pokémon has mega forms, each with its own stats, design, and abilities.",
+                    "Custom hooks like usePokemonDetails and usePokemonAbilities handle data loading and errors.",
+                    "The page is fully responsive and includes a back button to the regional Pokémon list."
+                ],
+                "6": [
+                    "From the regional gym leaders list, users can access a dedicated page for them.",
+                    "Each leader is displayed in a card with: high-quality rounded image, name, city, gym type, and the badge they give.",
+                    "The card also shows their Pokémon team with images, names, and levels.",
+                    "Rewards are listed: TM earned and prize money.",
+                    "Data is dynamically loaded using the useGymLeaders hook and filtered by region.",
+                    "Responsive card layout adapts to mobile, tablet, and desktop views.",
+                    "Icons improve readability, and fallback images ensure visual consistency in case of errors.",
+                    "Each card inherits styling based on the gym type (fire, water, etc.), applied to headers and decorative elements."
+                ]
             }
         },
         "portfolio": {
