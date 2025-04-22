@@ -2,7 +2,6 @@ import { useTranslation } from 'react-i18next'
 
 // Importa las imágenes de los proyectos aquí
 import reactIcon from "../assets/portfolio/react-icon.png";
-// import reactIcon from "../assets/portfolio/react-icon.webp";
 import tailwindIcon from "../assets/portfolio/tailwind-icon.png";
 import image2 from "../assets/imagen2.jpg";
 
