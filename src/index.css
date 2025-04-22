@@ -149,3 +149,34 @@
 .container::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.switch .slider {
+  transition: all 0.4s ease-in-out;
+}
+
+html {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+.dark .switch {
+  background-color: #ffffff;
+}
+.dark .switch input:checked + .slider {
+  background-color: #00a6ff;
+}
+.dark .switch input:checked + .slider:before {
+  transform: translateX(1.8em);
+  box-shadow: inset 15px -4px 0px 15px #ffcf48;
+}
+.dark .switch input:checked ~ .slider .star {
+  opacity: 0;
+}
+.dark .switch input:checked ~ .slider .cloud {
+  opacity: 1;
+}
+.dark .switch input:checked ~ .slider .cloud_1 {
+  background-color: #ffffff;
+}

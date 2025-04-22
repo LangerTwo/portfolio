@@ -8,6 +8,8 @@ export default defineConfig({
     react(),
     tailwindcss({
       config: './tailwind.config.js',
-      apply: 'build'
+      apply: 'build',
+      darkMode: 'class',
+      content: ['./src/**/*.{js,jsx,ts,tsx}'],
     })],
 })
