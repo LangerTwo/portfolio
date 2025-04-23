@@ -6,7 +6,13 @@ function Contact() {
   const { t } = useTranslation()
 
   return (
-    <div className="p-8 text-center dark:bg-transparent dark:text-white" id="contact">
+    <motion.div 
+      className="p-8 text-center bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black max-w-lg mx-auto rounded-xl shadow-md border border-gray-200 dark:border-gray-700 dark:bg-transparent dark:text-white" id="contact"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.03, y: -5 }}
+      transition={{ type: 'spring', stiffness: 300, damping: 20, duration: 0.5 }}
+    >
       <motion.h2
         className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4"
         initial={{ opacity: 0, y: 40 }}
@@ -37,7 +43,7 @@ function Contact() {
           <Linkedin size={20} /> linkedin.com/in/tuusuario
         </a>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

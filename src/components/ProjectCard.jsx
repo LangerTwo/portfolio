@@ -12,7 +12,7 @@ function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) 
       <motion.div
         whileHover={{ scale: 1.03, y: -5 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        className="bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden p-4 border border-gray-200 dark:border-gray-700 group"
+        className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black rounded-xl shadow-md overflow-hidden p-4 border border-gray-200 dark:border-gray-700 group"
       >
         {img && (
           <motion.img
