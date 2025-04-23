@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { X } from "lucide-react";
 
+
 const ProjectModal = ({ isOpen, onClose, slides }) => {
   return (
     <AnimatePresence>

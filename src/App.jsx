@@ -15,9 +15,9 @@ function App() {
       <Navbar />
       <main className="scroll-smooth">
       <section id="home"><Home /></section>
-      <section id="about"><About /></section>
-      <section id="projects"><Projects /></section>
-      <section id="contact" className="px-8"><Contact /></section>
+      <section id="about" className="scroll-mt-20"><About /></section>
+      <section id="projects" className="scroll-mt-20"><Projects /></section>
+      <section id="contact" className="px-8 scroll-mt-20"><Contact /></section>
       </main>
       <Footer />
     </>
