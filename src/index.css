@@ -121,8 +121,11 @@
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #442ad7 !important;
-  background-color: #000000 !important;
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+  scale: 1.1;
+  transition: all 0.4s ease-in-out;
 }
 
 .swiper-button-next::after,
@@ -179,4 +182,21 @@ html {
 }
 .dark .switch input:checked ~ .slider .cloud_1 {
   background-color: #ffffff;
+}
+
+/*  */
+.dark .swiper-button-next,
+.dark .swiper-button-prev{
+  color: #000000 !important;
+  background-color: #ffffffdb !important;
+  overflow: hidden !important;
+}
+
+.dark .swiper-button-next:hover,
+.dark .swiper-button-prev:hover {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  scale: 1.1;
+  transition: all 0.4s ease-in-out;
 }

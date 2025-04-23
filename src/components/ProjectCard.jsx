@@ -12,13 +12,13 @@ function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) 
       <motion.div
         whileHover={{ scale: 1.03, y: -5 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        className="bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden p-4"
+        className="bg-white dark:bg-zinc-900 rounded-xl shadow-md overflow-hidden p-4 border border-gray-200 dark:border-gray-700 group"
       >
         {img && (
           <motion.img
             src={img}
             alt={title}
-            className="w-full h-40 object-cover rounded"
+            className="w-full h-40 rounded"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           />

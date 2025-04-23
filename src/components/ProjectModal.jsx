@@ -16,14 +16,14 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
         exit={{ opacity: 0 }}
       >
         <motion.div 
-          className="bg-white dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-hidden relative flex flex-col"
+          className="bg-gray-50 dark:bg-gray-800 rounded-lg shadow-lg w-full max-w-3xl max-h-[90vh] overflow-hidden relative flex flex-col"
           initial={{ scale: 0.8 }} 
           animate={{ scale: 1 }} 
           exit={{ scale: 0.8 }}
         >
           <button 
             onClick={onClose} 
-            className="absolute top-2 right-2 text-white dark:text-black hover:text-red-400 hover:scale-105 bg-[#000000db] dark:bg-[#ffffffdb] hover:bg-black dark:hover:bg-white z-10 p-2 rounded-full"
+            className="absolute top-2 right-4 text-white dark:text-black hover:text-black hover:border hover:border-black hover:scale-105 bg-[#000000db] dark:bg-[#ffffffdb] hover:bg-white dark:hover:bg-black dark:hover:text-white dark:hover:border-white dark:hover:border-2 z-10 p-2 rounded-full hover:transition-transform duration-200 ease-in-out hover:shadow-lg"
           >
             <X />
           </button>
