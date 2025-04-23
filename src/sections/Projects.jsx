@@ -1,5 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 import { useTranslation } from 'react-i18next'
+import { motion } from 'framer-motion';
 
 // Importa las imágenes de los proyectos aquí
 
@@ -48,11 +49,16 @@ function Projects() {
   ];
 
   return (
-    <div className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black">
+    <motion.div 
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black"
+    >
       {projects.map((proj, i) => (
         <ProjectCard key={i} {...proj} />
       ))}
-    </div>
+    </motion.div>
   );
 }
 

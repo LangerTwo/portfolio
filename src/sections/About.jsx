@@ -15,7 +15,7 @@ function About() {
           alt="Avatar"
           className="w-30 h-30 lg:w-40 lg:h-40 rounded-full shadow-lg object-cover border-4 border-blue-500 dark:border-blue-300 absolute top-8 right-8 hidden md:block"
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         />
 
@@ -25,14 +25,14 @@ function About() {
           alt="Avatar"
           className="w-24 h-24 mx-auto rounded-full shadow-lg object-cover border-4 border-blue-500 dark:border-blue-300 md:hidden"
           initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         />
 
         <motion.div
           className="max-w-2xl"
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">
