@@ -20,7 +20,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full bg-gray-800 text-white px-6 py-4 flex justify-between">
+    <nav className="fixed z-50 w-full bg-gray-800 text-white px-6 py-4 flex justify-between shadow-lg items-center">
       <h1 className="text-xl font-bold">
         <ScrollLink to="home" smooth={true} duration={500} onClick={closeMenu} className="cursor-pointer">
           Mi Portafolio
