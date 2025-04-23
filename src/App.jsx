@@ -6,16 +6,18 @@ import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from './components/Footer';
+import ParticleBackground from './components/ParticleBackground';
 
 function App() {
   return (
     <>
+      <ParticleBackground />
       <Navbar />
       <main className="scroll-smooth">
-        <section id="home"><Home /></section>
-        <section id="about"><About /></section>
-        <section id="projects"><Projects /></section>
-        <section id="contact"><Contact /></section>
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="projects"><Projects /></section>
+      <section id="contact"><Contact /></section>
       </main>
       <Footer />
     </>

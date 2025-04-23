@@ -53,7 +53,7 @@ function Projects() {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:bg-black"
+      className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:transparent dark:text-white"
     >
       {projects.map((proj, i) => (
         <ProjectCard key={i} {...proj} />

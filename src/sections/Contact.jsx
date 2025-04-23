@@ -6,7 +6,7 @@ function Contact() {
   const { t } = useTranslation()
 
   return (
-    <div className="p-8 text-center dark:bg-black dark:text-white" id="contact">
+    <div className="p-8 text-center dark:bg-transparent dark:text-white" id="contact">
       <motion.h2
         className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4"
         initial={{ opacity: 0, y: 40 }}
