@@ -8,7 +8,7 @@ import tailwindIcon from "../assets/portfolio/tailwind-icon.png";
 import javascriptIcon from "../assets/portfolio/javascript.png";
 import framerMotionIcon from "../assets/portfolio/framer-motion-icon.svg";
 import pokeApiIcon from "../assets/portfolio/pokeapi-icon.png";
-import { s } from 'framer-motion/client';
+import cssIcon from "../assets/portfolio/css-icon2.png";
 
 const techLogos = {
   react: reactIcon,
@@ -16,6 +16,7 @@ const techLogos = {
   javascript: javascriptIcon,
   framermotion: framerMotionIcon,
   pokeApi: pokeApiIcon,
+  css: cssIcon,
 };
 
 function ProjectCard({ title, description, img, link, view, moreInfo, slides, techs }) {
@@ -39,7 +40,7 @@ function ProjectCard({ title, description, img, link, view, moreInfo, slides, te
       <motion.div
         whileHover={{ scale: 1.03, y: -5 }}
         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-        className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black rounded-xl shadow-md overflow-hidden p-4 border border-gray-200 dark:border-gray-700"
+        className="bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black rounded-xl shadow-md overflow-hidden p-4 border border-gray-200 dark:border-gray-700 flex flex-col gap-4 h-full"
       >
         {img && (
           <motion.img
@@ -65,7 +66,7 @@ function ProjectCard({ title, description, img, link, view, moreInfo, slides, te
             <a
               href={view}
               target="_blank"
-              className="text-blue-500 hover:underline"
+              className="text-sm text-white bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded"
               rel="noopener noreferrer"
             > 
               {t('view')}
@@ -80,20 +81,20 @@ function ProjectCard({ title, description, img, link, view, moreInfo, slides, te
             </button>
           )}
         </div>
-        <div className="flex gap-2 mt-2">
-        {techs?.length > 0 && (
-          <div className="flex gap-2 mt-2">
-            {techs.map((tech, index) => (
-              <img
-                key={index}
-                src={techLogos[tech]}
-                alt={tech}
-                className="w-8 h-8 object-contain bg-white rounded-full p-1"
-                title={tech.charAt(0).toUpperCase() + tech.slice(1)}
-              />
-            ))}
-          </div>
-        )}
+        <div className="flex gap-2 mt-auto">
+          {techs?.length > 0 && (
+            <div className="flex gap-2 mt-2">
+              {techs.map((tech, index) => (
+                <img
+                  key={index}
+                  src={techLogos[tech]}
+                  alt={tech}
+                  className="w-8 h-8 object-contain bg-white rounded-full p-1 dark:border dark:border-gray-700 shadow-sm"
+                  title={tech.charAt(0).toUpperCase() + tech.slice(1)}
+                />
+              ))}
+            </div>
+          )}
         </div>                
       </motion.div>
       <ProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} slides={slides} />

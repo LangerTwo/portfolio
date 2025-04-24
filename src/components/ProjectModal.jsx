@@ -38,25 +38,24 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
             >
               {slides.map((slide, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="p-4 text-center">
+                  <div className="p-4">
                     <img 
                       rel="preload"
                       src={slide.image} 
                       alt={`Slide ${idx}`} 
                       className="w-full max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
                     />
-                    {/* <p className="text-gray-800 dark:text-white text-sm md:text-base">
-                      {slide.text}
-                    </p> */}
-                    {Array.isArray(slide.text) ? (
-                      slide.text.map((paragraph, idx) => (
-                        <p key={idx} className="mb-2 text-gray-800 dark:text-white text-sm md:text-base">
-                          {paragraph}
-                        </p>
-                      ))
-                    ) : (
-                      <p className="text-gray-800 dark:text-white text-sm md:text-base">{slide.text}</p>
-                    )}
+                    <div className="flex flex-col gap-1 mx-auto">
+                      {Array.isArray(slide.text) ? (
+                        slide.text.map((paragraph, idx) => (
+                          <p key={idx} className="mb-2 text-gray-800 dark:text-white text-sm md:text-base ">
+                            {paragraph}
+                          </p>
+                        ))
+                      ) : (
+                        <p className="text-gray-800 dark:text-white text-sm md:text-base">{slide.text}</p>
+                      )}
+                    </div>      
                   </div>
                 </SwiperSlide>
               ))}

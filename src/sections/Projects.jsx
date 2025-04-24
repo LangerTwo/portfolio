@@ -16,6 +16,7 @@ import img7 from "../assets/poke/img7.webp";
 
 // Portfolio
 import port1 from "../assets/portfolio/portfolio1.png"
+import { view } from "framer-motion/client";
 
 function Projects() {
   const { t } = useTranslation()
@@ -43,8 +44,9 @@ function Projects() {
       title: "Portfolio",
       description: "projects.portfolio.description",
       link: "https://github.com/LangerTwo/portfolio",
+      view: "https://mi-first-portfolio.netlify.app/",
       img: port1,
-      techs: ['react', 'tailwind', 'javascript', 'framermotion'],
+      techs: ['react', 'tailwind', 'javascript', 'framermotion', 'css'],
     },
     // agrega más
   ];
