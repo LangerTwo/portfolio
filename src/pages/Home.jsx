@@ -3,6 +3,10 @@ import { motion } from 'framer-motion';
 
 import reactIcon from "../assets/portfolio/react-icon.png";
 import tailwindIcon from "../assets/portfolio/tailwind-icon.png";
+import javascriptIcon from "../assets/portfolio/javascript.png";
+import htmlIcon from "../assets/portfolio/html.webp";
+import cssIcon from "../assets/portfolio/css-icon2.png";
+
 import image2 from "../assets/imagen2.jpg";
 
 function Home() {
@@ -36,13 +40,16 @@ function Home() {
         </motion.p>
 
         <motion.div
-          className="flex justify-center gap-6"
+          className="flex justify-center items-center gap-6"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <img src={reactIcon} alt="React" className="w-12 h-12" />
           <img src={tailwindIcon} alt="Tailwind" className="w-12 h-12 rounded-lg" />
+          <img src={javascriptIcon} alt="JavaScript" className="w-12 h-12 rounded-lg bg-white" />
+          <img src={htmlIcon} alt="HTML" className="w-12 h-12 rounded-lg bg-white" />
+          <img src={cssIcon} alt="CSS" className="w-12 h-12 rounded-lg bg-white" />
         </motion.div>
       </div>
       <motion.div

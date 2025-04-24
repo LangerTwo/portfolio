@@ -18,7 +18,7 @@ function Footer() {
             <Github size={18} /> GitHub
           </a>
           <a
-            href="https://linkedin.com/in/tuusuario"
+            href="https://linkedin.com/in/alanrangelprada/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition flex items-center gap-1"

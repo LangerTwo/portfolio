@@ -35,12 +35,12 @@ function Contact() {
           <Mail size={20} /> adrangel95@gmail.com
         </a>
         <a
-          href="https://linkedin.com/in/tuusuario"
+          href="https://linkedin.com/in/alanrangelprada/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 hover:text-blue-500 transition"
         >
-          <Linkedin size={20} /> linkedin.com/in/tuusuario
+          <Linkedin size={20} /> linkedin.com/in/alanrangelprada/
         </a>
       </motion.div>
     </motion.div>
