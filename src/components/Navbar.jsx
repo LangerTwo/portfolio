@@ -33,7 +33,7 @@ function Navbar() {
           className="cursor-pointer transition"
         >
           {/* Mi Portafolio */}
-          <img src={Logo} alt="Logo" className="w-30 h-10 object-cover cursor-pointer" />
+          <img src={Logo} alt="Logo" className="w-30 h-10 object-cover cursor-pointer rounded-sm" />
         </ScrollLink>
       </h1>
 
