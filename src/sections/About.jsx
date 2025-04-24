@@ -7,7 +7,7 @@ function About() {
   const aboutMe = t("about_me", { returnObjects: true });
 
   return (
-    <div className="relative max-w-5xl mx-auto pt-24 px-8 dark:transparent dark:text-white">
+    <div className="relative max-w-6xl mx-auto pt-24 px-8 dark:transparent dark:text-white">
       <div className='bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black flex flex-col md:flex-row p-8 rounded-lg shadow-lg gap-8 dark:border dark:border-gray-700'>
         {/* Avatar para pantallas grandes */}
         <motion.img

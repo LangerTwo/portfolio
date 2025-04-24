@@ -32,7 +32,7 @@ function Contact() {
           href="mailto:tuemail@gmail.com"
           className="flex items-center gap-2 hover:text-blue-500 transition"
         >
-          <Mail size={20} /> tuemail@gmail.com
+          <Mail size={20} /> adrangel95@gmail.com
         </a>
         <a
           href="https://linkedin.com/in/tuusuario"
