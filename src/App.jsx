@@ -17,7 +17,7 @@ function App() {
       <section id="home"><Home /></section>
       <section id="about" className="scroll-mt-20"><About /></section>
       <section id="projects" className="scroll-mt-20"><Projects /></section>
-      <section id="contact" className="px-8 scroll-mt-20"><Contact /></section>
+      <section id="contact" className="px-8 pt-24 scroll-mt-20"><Contact /></section>
       </main>
       <Footer />
     </>

@@ -49,16 +49,28 @@ function Projects() {
   ];
 
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:transparent dark:text-white"
-    >
-      {projects.map((proj, i) => (
-        <ProjectCard key={i} {...proj} />
-      ))}
-    </motion.div>
+    <div className="relative max-w-5xl mx-auto pt-24 px-8 dark:transparent dark:text-white">
+      <div className='bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black flex flex-col md:flex-row rounded-lg shadow-lg gap-8 dark:border dark:border-gray-700'>
+        <motion.div 
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="p-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 dark:transparent dark:text-white"
+        >
+          <motion.h2
+            className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4 col-span-full"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {t('projects_title')}
+          </motion.h2>
+          {projects.map((proj, i) => (
+            <ProjectCard key={i} {...proj} />
+          ))}
+        </motion.div>
+      </div>
+    </div>
   );
 }
 
