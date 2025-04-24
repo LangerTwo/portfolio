@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import ProjectModal from './ProjectModal';
@@ -8,6 +8,7 @@ import tailwindIcon from "../assets/portfolio/tailwind-icon.png";
 import javascriptIcon from "../assets/portfolio/javascript.png";
 import framerMotionIcon from "../assets/portfolio/framer-motion-icon.svg";
 import pokeApiIcon from "../assets/portfolio/pokeapi-icon.png";
+import { s } from 'framer-motion/client';
 
 const techLogos = {
   react: reactIcon,
@@ -20,6 +21,18 @@ const techLogos = {
 function ProjectCard({ title, description, img, link, view, moreInfo, slides, techs }) {
   const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
+
+  // Preload slide images
+  useEffect(() => {
+    if (slides) {
+      Object.values(slides).forEach((slide) => {
+        if (slide?.img) {
+          const img = new Image();
+          img.src = slide.img;
+        }
+      });
+    }
+  }, [slides]);
 
   return (
     <>
