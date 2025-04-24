@@ -45,11 +45,11 @@ function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          <img src={reactIcon} alt="React" className="w-12 h-12" />
-          <img src={tailwindIcon} alt="Tailwind" className="w-12 h-12 rounded-lg" />
-          <img src={javascriptIcon} alt="JavaScript" className="w-12 h-12 rounded-lg bg-white" />
-          <img src={htmlIcon} alt="HTML" className="w-12 h-12 rounded-lg bg-white" />
-          <img src={cssIcon} alt="CSS" className="w-12 h-12 rounded-lg bg-white" />
+          <img src={reactIcon} alt="React" className="w-12 h-12 rounded-full p-1" />
+          <img src={tailwindIcon} alt="Tailwind" className="w-12 h-12 rounded-full p-1" />
+          <img src={javascriptIcon} alt="JavaScript" className="w-10 h-10 bg-white rounded-full p-1" />
+          <img src={htmlIcon} alt="HTML" className="w-10 h-10 bg-white rounded-full p-1" />
+          <img src={cssIcon} alt="CSS" className="w-10 h-10 bg-white rounded-full p-1" />
         </motion.div>
       </div>
       <motion.div

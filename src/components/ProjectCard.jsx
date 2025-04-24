@@ -3,7 +3,19 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import ProjectModal from './ProjectModal';
 
-function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) {
+import reactIcon from "../assets/portfolio/react-icon.png";
+import tailwindIcon from "../assets/portfolio/tailwind-icon.png";
+import javascriptIcon from "../assets/portfolio/javascript.png";
+import framerMotionIcon from "../assets/portfolio/framer-motion-icon.svg";
+
+const techLogos = {
+  react: reactIcon,
+  tailwind: tailwindIcon,
+  javascript: javascriptIcon,
+  framermotion: framerMotionIcon,
+};
+
+function ProjectCard({ title, description, img, link, demo, moreInfo, slides, techs }) {
   const { t } = useTranslation();
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -53,7 +65,21 @@ function ProjectCard({ title, description, img, link, demo, moreInfo, slides }) 
             </button>
           )}
         </div>
-
+        <div className="flex gap-2 mt-2">
+        {techs?.length > 0 && (
+          <div className="flex gap-2 mt-2">
+            {techs.map((tech, index) => (
+              <img
+                key={index}
+                src={techLogos[tech]}
+                alt={tech}
+                className="w-8 h-8 object-contain bg-white rounded-full p-1"
+                title={tech.charAt(0).toUpperCase() + tech.slice(1)}
+              />
+            ))}
+          </div>
+        )}
+        </div>                
       </motion.div>
       <ProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} slides={slides} />
     </>

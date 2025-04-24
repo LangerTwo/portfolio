@@ -37,13 +37,15 @@ function Projects() {
         { image: img5, text: t("projects.poke.slides.4", { returnObjects: true }) },
         { image: img6, text: t("projects.poke.slides.5", { returnObjects: true }) },
         { image: img7, text: t("projects.poke.slides.6", { returnObjects: true }) }
-      ]
+      ],
+      techs: ['react', 'tailwind', 'javascript']
     },
     {
       title: "Portfolio",
       description: "projects.portfolio.description",
       link: "https://github.com/LangerTwo/portfolio",
       img: port1,
+      techs: ['react', 'tailwind', 'javascript', 'framermotion'],
     },
     // agrega más
   ];
