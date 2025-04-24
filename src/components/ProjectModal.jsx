@@ -40,6 +40,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
                 <SwiperSlide key={idx}>
                   <div className="p-4 text-center">
                     <img 
+                      rel="preload"
                       src={slide.image} 
                       alt={`Slide ${idx}`} 
                       className="w-full max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"

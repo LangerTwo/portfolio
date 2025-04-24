@@ -17,7 +17,6 @@ import img7 from "../assets/poke/img7.webp";
 // Portfolio
 import port1 from "../assets/portfolio/portfolio1.png"
 
-
 function Projects() {
   const { t } = useTranslation()
 
@@ -27,7 +26,7 @@ function Projects() {
       description: "projects.poke.description",
       moreInfo: "projects.poke.moreInfo",
       link: "https://github.com/LangerTwo/poke-web",
-      demo: "https://web-dex.netlify.app/",
+      view: "https://web-dex.netlify.app/",
       img: poke,
       slides: [
         { image: img1, text: t("projects.poke.slides.0", { returnObjects: true }) },
@@ -38,7 +37,7 @@ function Projects() {
         { image: img6, text: t("projects.poke.slides.5", { returnObjects: true }) },
         { image: img7, text: t("projects.poke.slides.6", { returnObjects: true }) }
       ],
-      techs: ['react', 'tailwind', 'javascript']
+      techs: ['react', 'tailwind', 'javascript', 'pokeApi']
     },
     {
       title: "Portfolio",

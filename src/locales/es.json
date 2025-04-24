@@ -11,7 +11,7 @@
     ],
     "projects_title": "Proyectos",
     "more_info": "Más información",
-    "close": "Cerrar",
+    "view": "Ver",
     "projects": {
         "poke": {
             "description": "App web para explorar y buscar Pokémon usando PokéAPI.",

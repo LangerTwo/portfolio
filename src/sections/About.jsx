@@ -8,7 +8,7 @@ function About() {
 
   return (
     <div className="relative max-w-6xl mx-auto pt-24 px-8 dark:transparent dark:text-white">
-      <div className='bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black flex flex-col md:flex-row p-8 rounded-lg shadow-lg gap-8 dark:border dark:border-gray-700'>
+      <div className='bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-black flex flex-col md:flex-row p-8 rounded-lg shadow-lg gap-8 dark:border dark:border-gray-700 texce'>
         {/* Avatar para pantallas grandes */}
         <motion.img
           src={avatar}
