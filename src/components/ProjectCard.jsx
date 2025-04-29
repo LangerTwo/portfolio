@@ -82,19 +82,18 @@ function ProjectCard({ title, description, img, link, view, moreInfo, slides, te
           )}
         </div>
         <div className="flex gap-2 mt-auto">
-          {techs?.length > 0 && (
-            <div className="flex gap-2 mt-2">
-              {techs.map((tech, index) => (
-                <img
-                  key={index}
-                  src={techLogos[tech]}
-                  alt={tech}
-                  className="w-8 h-8 object-contain bg-white rounded-full p-1 dark:border dark:border-gray-700 shadow-sm"
-                  title={tech.charAt(0).toUpperCase() + tech.slice(1)}
-                />
-              ))}
+        {techs.map((tech, index) => (
+          <div key={index} className="relative group">
+            <img
+              src={techLogos[tech]}
+              alt={tech}
+              className="w-8 h-8 object-contain bg-white rounded-full p-1 dark:border dark:border-gray-700 shadow-sm"
+            />
+            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap text-sm px-2 py-1 rounded bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none z-10">
+              {tech.charAt(0).toUpperCase() + tech.slice(1)}
             </div>
-          )}
+          </div>
+        ))}
         </div>                
       </motion.div>
       <ProjectModal isOpen={modalOpen} onClose={() => setModalOpen(false)} slides={slides} />

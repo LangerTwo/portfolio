@@ -47,9 +47,9 @@ function Navbar() {
               duration={500}
               offset={-80}
               spy={true}
-              activeClass="bg-blue-500 bg-opacity-20 rounded-md px-2 py-1 transition-all duration-300"
+              activeClass="relative text-blue-400 font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-blue-400 after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
               onClick={closeMenu}
-              className="cursor-pointer px-2 py-1 transition-all duration-300 hover:text-blue-400"
+              className="relative cursor-pointer px-2 py-1 transition-all duration-300 hover:text-blue-400 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-blue-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
             >
               {link.label}
             </ScrollLink>
