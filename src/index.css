@@ -116,7 +116,7 @@
   z-index: 10 !important;
   background-color: #000000db !important;
   overflow: hidden !important;
-  top: var(--swiper-navigation-top-offset, 40%) !important;
+  top: var(--swiper-navigation-top-offset, 35%) !important;
   transition: all 0.4s ease-in-out;
 }
 
@@ -169,6 +169,23 @@
   }
 }
 
+.dark .swiper-button-next,
+.dark .swiper-button-prev{
+  color: #ffffff !important;
+  background-color: transparent !important;
+  overflow: hidden !important;
+  border: 1px solid #ffffff !important;
+}
+
+.dark .swiper-button-next:hover,
+.dark .swiper-button-prev:hover {
+  
+  background-color: #000000 !important;
+  /* border: 2px solid #ffffff !important; */
+  scale: 1.1;
+  transition: all 0.4s ease-in-out;
+}
+
 /* Ocultar scrollbar en todos los navegadores */
 .container {
   scrollbar-width: none; /* Firefox */
@@ -211,18 +228,4 @@ html {
 }
 
 /*  */
-.dark .swiper-button-next,
-.dark .swiper-button-prev{
-  color: #000000 !important;
-  background-color: #ffffffdb !important;
-  overflow: hidden !important;
-}
 
-.dark .swiper-button-next:hover,
-.dark .swiper-button-prev:hover {
-  color: #ffffff !important;
-  background-color: #000000 !important;
-  border: 2px solid #ffffff !important;
-  scale: 1.1;
-  transition: all 0.4s ease-in-out;
-}

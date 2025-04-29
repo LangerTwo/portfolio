@@ -29,7 +29,7 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
             <X />
           </button>
       
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1">
             <Swiper
               modules={[Navigation]}
               loop={true}
@@ -38,14 +38,17 @@ const ProjectModal = ({ isOpen, onClose, slides }) => {
             >
               {slides.map((slide, idx) => (
                 <SwiperSlide key={idx}>
-                  <div className="p-4">
+                  <div className="p-4 flex flex-col h-full">
+                    <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+                      {slide.title}
+                    </h2>
                     <img 
                       rel="preload"
                       src={slide.image} 
                       alt={`Slide ${idx}`} 
                       className="w-full max-h-60 md:max-h-80 object-contain rounded mb-4 mx-auto"
                     />
-                    <div className="flex flex-col gap-1 mx-auto">
+                    <div className="flex flex-col gap-1 overflow-x-hidden overflow-y-scroll h-64">
                       {Array.isArray(slide.text) ? (
                         slide.text.map((paragraph, idx) => (
                           <p key={idx} className="mb-2 text-gray-800 dark:text-white text-sm md:text-base ">

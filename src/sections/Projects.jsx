@@ -16,8 +16,8 @@ import img7 from "../assets/poke/img7.webp";
 
 // Portfolio
 import port1 from "../assets/portafolio/page.webp"
-import port2 from "../assets/portafolio/home.webp";
-import port3 from "../assets/portafolio/navbar.webp";
+import port2 from "../assets/portafolio/navbar2.webp";
+import port3 from "../assets/portafolio/home.webp";
 import port4 from "../assets/portafolio/about.webp";
 import port5 from "../assets/portafolio/projects.webp";
 import port6 from "../assets/portafolio/contact.webp";
