@@ -77,7 +77,53 @@
             }
         },
         "portfolio": {
-            "description": "Personal portfolio created with React and Tailwind CSS."
+            "description": "Personal portfolio created with React and Tailwind CSS.",
+            "moreInfo": "This portfolio showcases my projects and skills. It was built with React, Tailwind CSS, and Framer Motion for animations.",
+            "slides": {
+                "0": [
+                    "This portfolio is designed to showcase my skills and projects. The layout is clean and modern, with a focus on usability and aesthetics.",
+                    "It includes sections for my work, skills, and contact information. The design is fully responsive, ensuring a great experience on all devices.",
+                    "The portfolio features smooth animations using Framer Motion. Transitions between sections are fluid, enhancing the overall user experience. Interactive elements are designed to be intuitive and engaging.",
+                    "Each project is presented with a brief description and a link to view more details. The projects section is organized for easy navigation, allowing users to explore my work effortlessly."
+                ],
+                "1": [
+                    "This navigation bar remains fixed at the top of the screen, providing quick access to all main sections of the site: Home, About Me, Projects, and Contact. It uses smooth scroll for a seamless user experience and includes a logo that links back to the home section. Built with React, Tailwind CSS, and React Scroll.",
+                    "The navbar is fixed to the top of the page, ensuring constant accessibility to main sections while scrolling. It includes a site logo on the left, which smoothly scrolls back to the Home section when clicked. Each menu item scrolls smoothly to its corresponding section using React Scroll, enhancing navigation. The menu items are styled for clarity and active section highlighting.",
+                    "On desktop view, all navigation links are displayed in a horizontal layout. On smaller screens (mobile), the navbar transforms into a hamburger menu for a clean UI. Clicking the burger icon opens a full-screen overlay menu with vertically stacked links. This responsive design ensures usability across all devices.",
+                    "The navbar features a Dark Mode Toggle that allows users to switch between light and dark themes. Dark mode is applied globally via Tailwind's dark variant, adjusting backgrounds, text, and borders. This improves accessibility and user comfort in different lighting conditions.",
+                    "A Language Switcher is integrated, allowing users to toggle between multiple languages. All text in the navbar is localized using react-i18next, ensuring a personalized experience. Language preference persists as users navigate through the site."
+                ],
+                "2": [
+                   "The Home section serves as the landing area of the portfolio. It introduces the user with a professional headline, a short description, and a prominent call-to-action button that scrolls smoothly to the Projects section. This section is fully responsive and adapts its layout and typography for optimal readability across devices.",
+                   "This section welcomes the visitor with a friendly greeting and the portfolio owner's name and profession. It typically contains animated text or styled typography to capture attention from the first moment. The profession is clearly stated (e.g., 'Frontend Developer'), giving immediate context about the user's expertise.",
+                   "A call-to-action (CTA) button is included to guide users toward exploring the work/projects. This button uses smooth scrolling behavior to jump to the Projects section. The button is styled to stand out, using hover effects and contrasting colors.",
+                   "The layout is centered vertically and horizontally on most screens, providing a balanced and elegant first impression. Typography scales fluidly depending on screen size, maintaining visual hierarchy and readability. Responsive spacing and sizing ensure it looks great on mobile, tablet, and desktop.",
+                   "Internationalization is supported via react-i18next, translating greeting, profession, and button text dynamically. Text is automatically updated based on the selected language from the navbar. This provides a welcoming and accessible experience for users worldwide." 
+                ],
+                "3": [
+                    "The About Me section offers visitors insight into the developer’s background, technical focus, and professional personality. It's written in a concise yet engaging tone and supports multilingual content via react-i18next. The layout adapts responsively, and icons or images may complement the text to enhance visual interest.",
+                    "This section includes a friendly introduction describing the developer’s background and passion for coding or design. It usually mentions key technologies used (e.g., React, JavaScript, TailwindCSS) and areas of interest (e.g., UI/UX, frontend development). The tone is personal and approachable, aiming to build a connection with the visitor.",
+                    "Text is formatted in short paragraphs or bullet points to enhance readability. Responsive typography ensures legibility on all devices, from mobile to desktop. Animations (e.g., fade-in) or transitions may be used to subtly bring attention to the section.",
+                    "This section may include an avatar or personal image, adding a human touch. A list of soft and hard skills is optionally presented, either in text form or as badges/icons. Some portfolios include experience or education summaries in this area.",
+                    "All text is translated dynamically using react-i18next, allowing users to read it in their preferred language. The content is structured to remain consistent in meaning and tone across languages, maintaining clarity and professionalism."
+                ],
+                "4": [
+                    "The Projects section presents a curated list of works developed by the author. Each project is displayed as a card with a title, short description, and image. Clicking a project opens a detailed modal that includes a Swiper-based slider with synchronized text and images, allowing for step-by-step exploration. Content supports multiple languages through react-i18next, and the UI is responsive and styled with TailwindCSS.",
+                    "This section displays all featured projects as individual cards inside a responsive grid layout. Each card contains a project image, title, and a short intro or tech stack summary. The cards use hover effects and transitions to invite interaction.",
+                    "Clicking a project opens a modal powered by Framer Motion animations for smooth entrance and exit. Inside the modal, a Swiper slider showcases the project details. The Swiper includes synchronized text and image slides, providing a narrative walkthrough of the project.",
+                    "Each slide can present a feature, challenge, or design aspect of the project, accompanied by a relevant image. Bullets are shown below the image for navigation feedback, and the layout ensures they stay visible even on small screens. This immersive format helps explain complex projects more clearly and visually.",
+                    "Navigation buttons (prev/next) are enabled and styled to match the modal's theme. The modals are responsive and adjust seamlessly to different screen sizes and orientations. Dark mode is fully supported and adapts both card and modal styling.",
+                    "All project content is multilingual using react-i18next, including modal text and slides. This ensures that users can read about the projects in their preferred language without any layout or design compromise."
+                ],
+                "5": [
+                    "The Contact section offers visitors an easy way to connect with the developer. It includes a responsive contact form with inputs for name, email, and message, along with validation and clear feedback. Icons or links to social profiles (GitHub, LinkedIn, etc.) are also presented. All content is internationalized using react-i18next, and the design adapts well to light/dark modes.",
+                    "This section features a centered layout with a clear heading and a brief introductory text encouraging users to get in touch. The message is friendly and professional, inviting collaboration or questions about the portfolio or projects. It uses smooth scroll from the navbar for direct access.",
+                    "The contact form includes fields for name, email, and message, all styled using TailwindCSS. Each field includes placeholder text and border feedback on focus for a better user experience. Form validation ensures that no field is left empty, and that email has a valid format before submission.",
+                    "Upon submission, users receive a confirmation (e.g., toast message or alert) if the message was sent successfully. Alternatively, if an error occurs, a user-friendly error message is displayed. Optional backend integration (like EmailJS or Formspree) can be used for real message delivery.",
+                    "Below or beside the form, icons link to external profiles such as GitHub, LinkedIn, or email. These are styled with hover effects and aligned consistently for clean design. Icons improve scanability and give users additional ways to connect.",
+                    "All text, labels, and placeholders are localized using react-i18next to support multiple languages. Responsiveness ensures that the form and icons look great on both mobile and desktop devices. Dark mode compatibility ensures inputs and icons are readable in any theme."
+                ]
+            }
         }
     },
     "see_projects": "See Projects",

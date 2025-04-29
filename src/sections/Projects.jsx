@@ -15,8 +15,13 @@ import img6 from "../assets/poke/img6.webp";
 import img7 from "../assets/poke/img7.webp";
 
 // Portfolio
-import port1 from "../assets/portfolio/portfolio1.png"
-import { view } from "framer-motion/client";
+import port1 from "../assets/portafolio/page.webp"
+import port2 from "../assets/portafolio/home.webp";
+import port3 from "../assets/portafolio/navbar.webp";
+import port4 from "../assets/portafolio/about.webp";
+import port5 from "../assets/portafolio/projects.webp";
+import port6 from "../assets/portafolio/contact.webp";
+
 
 function Projects() {
   const { t } = useTranslation()
@@ -43,9 +48,18 @@ function Projects() {
     {
       title: "Portfolio",
       description: "projects.portfolio.description",
+      moreInfo: "projects.portfolio.moreInfo",
       link: "https://github.com/LangerTwo/portfolio",
       view: "https://mi-first-portfolio.netlify.app/",
       img: port1,
+      slides: [
+        { image: port1, text: t("projects.portfolio.slides.0", { returnObjects: true }) },
+        { image: port2, text: t("projects.portfolio.slides.1", { returnObjects: true }) },
+        { image: port3, text: t("projects.portfolio.slides.2", { returnObjects: true }) },
+        { image: port4, text: t("projects.portfolio.slides.3", { returnObjects: true }) },
+        { image: port5, text: t("projects.portfolio.slides.4", { returnObjects: true }) },
+        { image: port6, text: t("projects.portfolio.slides.5", { returnObjects: true }) }
+      ],
       techs: ['react', 'tailwind', 'javascript', 'framermotion', 'css'],
     },
     // agrega más
